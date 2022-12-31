@@ -36,7 +36,7 @@ public class NameSelectorTest {
         Thread.sleep(2000);
 
         // Relative xpath locator/Selector
-        driver.findElement(By.xpath("//input[@name='password1']")).sendKeys("asdksa");
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("asdksa");
         Thread.sleep(2000);
 
         driver.quit();
