@@ -60,7 +60,6 @@ public class AlertsTest {
         Thread.sleep(3000);
         alert.accept();
 
-
         driver.quit();
     }
 }

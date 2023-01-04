@@ -20,7 +20,6 @@ public class iFramesTest {
         System.out.println(driver.findElement(By.id("sampleHeading")).getText());
         driver.switchTo().defaultContent();
         System.out.println(driver.findElement(By.id("item-2")).getText());
-        ;
         driver.quit();
     }
 }
