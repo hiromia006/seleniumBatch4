@@ -23,14 +23,14 @@ public class WindowsTest {
         driver.findElement(By.id("windowButton")).click();
         Thread.sleep(3000);
 
-//        driver.switchTo().newWindow(WindowType.WINDOW);
-//        System.out.println(driver.findElement(By.id("sampleHeading")).getText());
-//        Thread.sleep(3000);
-//        driver.close();
+        driver.switchTo().newWindow(WindowType.WINDOW);
+        System.out.println(driver.findElement(By.id("sampleHeading")).getText());
+        Thread.sleep(3000);
+        driver.close();
 
-//        driver.switchTo().newWindow(WindowType.WINDOW);
-//        driver.get("https://demoqa.com/sample");
-//        System.out.println(driver.findElement(By.id("sampleHeading")).getText());
+        driver.switchTo().newWindow(WindowType.WINDOW);
+        driver.get("https://demoqa.com/sample");
+        System.out.println(driver.findElement(By.id("sampleHeading")).getText());
         Thread.sleep(3000);
         driver.close();
 
