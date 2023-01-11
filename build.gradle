@@ -20,6 +20,10 @@ dependencies {
     // https://mvnrepository.com/artifact/org.testng/testng
     testImplementation 'org.testng:testng:7.7.1'
 
+    //POI
+    testImplementation 'org.apache.poi:poi:5.2.3'
+    testImplementation 'org.apache.poi:poi-ooxml:5.2.3'
+
 }
 
 test {
