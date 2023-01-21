@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestNgTest extends BaseTest {
+public class TestNgTestTwo extends BaseTestTwo {
 
     @Test(priority = 2)
     public void verifyLoginPage() {

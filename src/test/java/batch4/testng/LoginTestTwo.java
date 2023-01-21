@@ -12,7 +12,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class LoginTest extends BaseTest {
+public class LoginTestTwo extends BaseTestTwo {
 
     @DataProvider(name = "zaki")
     public Object[][] getTestData() {

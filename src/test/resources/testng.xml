@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="sss">
         <classes>
-            <class name="batch4.testng.TestNgTest">
+            <class name="batch4.testng.TestNgTestTwo">
             </class>
         </classes>
     </test>
