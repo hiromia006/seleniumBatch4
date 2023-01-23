@@ -1,6 +1,7 @@
 package com.parabank.parasoft.test.pages;
 
 import com.parabank.parasoft.test.baseTest.BaseTest;
+import com.parabank.parasoft.test.util.General;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -18,6 +19,9 @@ public class CustomerLoginPage extends BaseTest {
 
     @FindBy(className = "error")
     WebElement errorEl;
+
+    @FindBy(css = "a[href*='register']")
+    WebElement registerLink;
 
     public CustomerLoginPage() {
         PageFactory.initElements(driver, this);
@@ -54,6 +58,7 @@ public class CustomerLoginPage extends BaseTest {
         fillUsername(username);
         fillPassword(password);
         clickLoginBtn();
+        General.domStable();
         return new OverviewPage();
     }
 
@@ -65,6 +70,12 @@ public class CustomerLoginPage extends BaseTest {
 
     public boolean hasError() {
         return errorEl.isDisplayed();
+    }
+
+    public RegisterPage clickRegisterLink() {
+        registerLink.isDisplayed();
+        registerLink.click();
+        return new RegisterPage();
     }
 
 }
