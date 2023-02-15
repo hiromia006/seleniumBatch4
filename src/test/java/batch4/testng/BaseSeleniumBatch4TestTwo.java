@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
-public class BaseTestTwo {
+public class BaseSeleniumBatch4TestTwo {
     public static WebDriver driver;
 
    @BeforeClass

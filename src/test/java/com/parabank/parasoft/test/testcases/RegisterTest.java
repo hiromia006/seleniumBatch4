@@ -1,16 +1,16 @@
 package com.parabank.parasoft.test.testcases;
 
-import com.parabank.parasoft.test.baseTest.BaseTest;
+import com.parabank.parasoft.test.baseTest.BaseSeleniumBatch4Test;
 import com.parabank.parasoft.test.pages.CustomerLoginPage;
 import com.parabank.parasoft.test.pages.RegisterPage;
-import com.parabank.parasoft.test.util.General;
+import com.parabank.parasoft.test.util.GeneralSeleniumBatchFour;
 import com.thedeanda.lorem.LoremIpsum;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class RegisterTest extends BaseTest {
+public class RegisterTest extends BaseSeleniumBatch4Test {
     RegisterPage registerPage;
 
     public RegisterTest() {
@@ -46,7 +46,7 @@ public class RegisterTest extends BaseTest {
 
     @AfterClass
     public void tearDown() {
-        General.domStable();
+        GeneralSeleniumBatchFour.domStable();
         driver.quit();
     }
 }

@@ -1,14 +1,14 @@
 package com.parabank.parasoft.test.pages;
 
-import com.parabank.parasoft.test.baseTest.BaseTest;
-import com.parabank.parasoft.test.util.General;
+import com.parabank.parasoft.test.baseTest.BaseSeleniumBatch4Test;
+import com.parabank.parasoft.test.util.GeneralSeleniumBatchFour;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class UpdateProfilePage extends BaseTest {
+public class UpdateProfilePage extends BaseSeleniumBatch4Test {
     @FindBy(id = "customer.firstName")
     WebElement firstNameEl;
 
@@ -32,7 +32,7 @@ public class UpdateProfilePage extends BaseTest {
     }
 
     public UpdateProfilePage fillFirstName(String firstName) {
-        General.domStable();
+        GeneralSeleniumBatchFour.domStable();
         firstNameEl.isDisplayed();
         firstNameEl.clear();
         firstNameEl.sendKeys(firstName);
@@ -60,7 +60,7 @@ public class UpdateProfilePage extends BaseTest {
     }
 
     public boolean hasPhoneNumber() {
-        General.domStable();
+        GeneralSeleniumBatchFour.domStable();
         return webElements.size() == 0;
     }
 

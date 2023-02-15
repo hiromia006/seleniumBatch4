@@ -12,7 +12,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class LoginTestTwo extends BaseTestTwo {
+public class LoginSeleniumBatch4TestTwo extends BaseSeleniumBatch4TestTwo {
 
     @DataProvider(name = "zaki")
     public Object[][] getTestData() {

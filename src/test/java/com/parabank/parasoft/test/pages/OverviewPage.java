@@ -1,12 +1,12 @@
 package com.parabank.parasoft.test.pages;
 
-import com.parabank.parasoft.test.baseTest.BaseTest;
-import com.parabank.parasoft.test.util.General;
+import com.parabank.parasoft.test.baseTest.BaseSeleniumBatch4Test;
+import com.parabank.parasoft.test.util.GeneralSeleniumBatchFour;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class OverviewPage extends BaseTest {
+public class OverviewPage extends BaseSeleniumBatch4Test {
     @FindBy(css = "a[href*='logout']")
     WebElement logoutLink;
 
@@ -27,14 +27,14 @@ public class OverviewPage extends BaseTest {
     }
 
     public OpenAccountPage clickOpenAccountLink() {
-        General.domStable();
+        GeneralSeleniumBatchFour.domStable();
         openAccountLink.isDisplayed();
         openAccountLink.click();
         return new OpenAccountPage();
     }
 
     public UpdateProfilePage clickUpdateProfileLink() {
-        General.domStable();
+        GeneralSeleniumBatchFour.domStable();
         updateProfileLink.isDisplayed();
         updateProfileLink.click();
         return new UpdateProfilePage();

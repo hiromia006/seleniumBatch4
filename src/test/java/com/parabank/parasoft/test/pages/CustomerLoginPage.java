@@ -1,13 +1,13 @@
 package com.parabank.parasoft.test.pages;
 
-import com.parabank.parasoft.test.baseTest.BaseTest;
-import com.parabank.parasoft.test.util.General;
+import com.parabank.parasoft.test.baseTest.BaseSeleniumBatch4Test;
+import com.parabank.parasoft.test.util.GeneralSeleniumBatchFour;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class CustomerLoginPage extends BaseTest {
+public class CustomerLoginPage extends BaseSeleniumBatch4Test {
     @FindBy(how = How.NAME, using = "username")
     WebElement usernameEl;
 
@@ -58,7 +58,7 @@ public class CustomerLoginPage extends BaseTest {
         fillUsername(username);
         fillPassword(password);
         clickLoginBtn();
-        General.domStable();
+        GeneralSeleniumBatchFour.domStable();
         return new OverviewPage();
     }
 

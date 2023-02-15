@@ -1,14 +1,12 @@
 package com.parabank.parasoft.test.pages;
 
-import com.parabank.parasoft.test.baseTest.BaseTest;
-import com.parabank.parasoft.test.util.General;
+import com.parabank.parasoft.test.baseTest.BaseSeleniumBatch4Test;
+import com.parabank.parasoft.test.util.GeneralSeleniumBatchFour;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-
-public class RegisterPage extends BaseTest {
+public class RegisterPage extends BaseSeleniumBatch4Test {
     @FindBy(id = "customer.firstName")
     WebElement firstNameEl;
 
@@ -53,7 +51,7 @@ public class RegisterPage extends BaseTest {
     }
 
     public RegisterPage fillFirstName(String firstName) {
-        General.domStable();
+        GeneralSeleniumBatchFour.domStable();
         firstNameEl.isDisplayed();
         firstNameEl.clear();
         firstNameEl.sendKeys(firstName);

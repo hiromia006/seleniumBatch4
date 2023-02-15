@@ -1,6 +1,6 @@
 package com.parabank.parasoft.test.baseTest;
 
-import com.parabank.parasoft.test.util.General;
+import com.parabank.parasoft.test.util.GeneralSeleniumBatchFour;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,11 +13,11 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
-public class BaseTest {
+public class BaseSeleniumBatch4Test {
     private Properties properties;
     public static WebDriver driver;
 
-    public BaseTest() {
+    public BaseSeleniumBatch4Test() {
         try {
             properties = new Properties();
             String filePath = System.getProperty("user.dir") + "/src/test/resources/config.properties";
@@ -55,7 +55,7 @@ public class BaseTest {
 
         driver.get(properties.getProperty("baseUrl"));
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(General.PAGE_LOAD_TIME));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GeneralSeleniumBatchFour.PAGE_LOAD_TIME));
     }
 
     public String getUserName() {

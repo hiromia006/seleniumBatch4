@@ -1,15 +1,15 @@
 package com.parabank.parasoft.test.testcases;
 
-import com.parabank.parasoft.test.baseTest.BaseTest;
+import com.parabank.parasoft.test.baseTest.BaseSeleniumBatch4Test;
 import com.parabank.parasoft.test.pages.CustomerLoginPage;
 import com.parabank.parasoft.test.pages.OverviewPage;
-import com.parabank.parasoft.test.util.General;
+import com.parabank.parasoft.test.util.GeneralSeleniumBatchFour;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class CustomerLoginTest extends BaseTest {
+public class CustomerLoginSeleniumBatch4Test extends BaseSeleniumBatch4Test {
     CustomerLoginPage loginPage;
     OverviewPage overviewPage;
 
@@ -18,7 +18,7 @@ public class CustomerLoginTest extends BaseTest {
         setUpBrowser();
     }
 
-    public CustomerLoginTest() {
+    public CustomerLoginSeleniumBatch4Test() {
         super();
     }
 
@@ -62,7 +62,7 @@ public class CustomerLoginTest extends BaseTest {
 
     @AfterClass
     public void tearDown() {
-        General.domStable();
+        GeneralSeleniumBatchFour.domStable();
         driver.quit();
     }
 }

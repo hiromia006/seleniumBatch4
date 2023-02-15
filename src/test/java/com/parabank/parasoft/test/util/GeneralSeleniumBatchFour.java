@@ -1,6 +1,6 @@
 package com.parabank.parasoft.test.util;
 
-public class General {
+public class GeneralSeleniumBatchFour {
     final static public int PAGE_LOAD_TIME = 30;
 
     public static void domStable() {

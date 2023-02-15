@@ -1,11 +1,11 @@
 package com.parabank.parasoft.test.pages;
 
-import com.parabank.parasoft.test.baseTest.BaseTest;
+import com.parabank.parasoft.test.baseTest.BaseSeleniumBatch4Test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class OpenAccountPage extends BaseTest {
+public class OpenAccountPage extends BaseSeleniumBatch4Test {
     @FindBy(className = "button")
     WebElement openAccountBtn;
 
